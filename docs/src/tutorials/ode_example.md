@@ -149,7 +149,7 @@ In DifferentialEquations.jl, some good "go-to" choices for ODEs are:
 - `radau()` for really high accuracy stiff equations (requires installing ODEInterfaceDiffEq.jl)
 
 For a comprehensive list of the available algorithms and detailed recommendations,
-[Please see the solver documentation](../../solvers/ode_solve.html). Every problem
+[Please see the solver documentation](http://docs.juliadiffeq.org/latest/solvers/ode_solve.html). Every problem
 type has an associated page detailing all of the solvers associated with the problem.
 
 ### Step 3: Analyzing the Solution
