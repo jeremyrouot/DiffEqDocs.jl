@@ -65,7 +65,7 @@ end
 bvp3 = BVProblem(simplependulum!, bc3!, u₀_2, tspan)
 sol3 = solve(bvp3, Shooting(Vern7()))
 ```
-The initial guess can also be supplied via a function of `t` or a previous solution type, this is espacially handy for parameter analysis.
+The initial guess can also be supplied via a function of `t` or a previous solution type, this is especially handy for parameter analysis.
 We changed `u` to `sol` to emphasize the fact that in this case the boundary condition can be written on the solution object. Thus all of the features on the solution type such as interpolations are available when using the `Shooting` method (i.e. you can have a boundary condition saying that the maximum over the interval is `1` using an optimization function on the continuous output). Note that user has to import the IVP solver before it can be used. Any common interface ODE solver is acceptable.
 
 ```julia
